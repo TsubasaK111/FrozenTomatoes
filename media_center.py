@@ -1,5 +1,5 @@
 import media
-import fresh_tomatoes
+import frozen_tomatoes
 these_movies = []
 
 five_hundred_days_of_summer = media.Movie("500 Days of Summer",
@@ -38,4 +38,4 @@ these_movies.append(up_film)
 these_movies.append(donnie_darko)
 these_movies.append(american_history_x)
 
-fresh_tomatoes.open_movies_page(these_movies)
+frozen_tomatoes.open_movies_page(these_movies)
