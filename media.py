@@ -8,3 +8,12 @@ class Movie():
             self.trailer_video_url = set_trailer_video
         def play_trailer(self):
             webbrowser.open(self.trailer_video_url)
+
+class Song():
+        def __init__(self, set_title, set_description_text, set_song_image, set_song_url):
+            self.title = set_title
+            self.description_text = set_description_text
+            self.image = set_song_image
+            self.play_url = set_song_url
+        def play_song(self):
+            webbrowser.open(self.play_url)
