@@ -1,11 +1,14 @@
 import media
+import fresh_tomatoes
+these_movies = []
 
 goodwill_hunting = media.Movie("Goodwill Hunting",
                     "Robert Williams and Matt Damon Shenanigans!!!",
                     "https://upload.wikimedia.org/wikipedia/en/b/b8/Good_Will_Hunting_theatrical_poster.jpg",
                     "https://www.youtube.com/watch?v=z02M3NRtkAA")
 
-500_days_of_summer = media.Movie("500 Days of Summer",
+
+five_hundred_days_of_summer = media.Movie("500 Days of Summer",
                     "You should know upfront that this is not a love story ;) ",
                     "https://upload.wikimedia.org/wikipedia/en/d/d1/Five_hundred_days_of_summer.jpg",
                     "https://www.youtube.com/watch?v=PsD0NpFSADM")
@@ -25,5 +28,10 @@ american_history_x = media.Movie("American History X",
                     "https://upload.wikimedia.org/wikipedia/en/0/0a/American_history_x_poster.jpg",
                     "https://www.youtube.com/watch?v=h4GZMt8rWbU")
 
+these_movies.append(goodwill_hunting)
+these_movies.append(five_hundred_days_of_summer)
+these_movies.append(garden_state)
+these_movies.append(donnie_darko)
+these_movies.append(american_history_x)
 
-# goodwill_hunting.play_trailer()
+fresh_tomatoes.open_movies_page(these_movies)
