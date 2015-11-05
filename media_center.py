@@ -31,13 +31,22 @@ american_history_x = media.Movie("American History X",
                     "https://upload.wikimedia.org/wikipedia/en/0/0a/American_history_x_poster.jpg",
                     "https://www.youtube.com/watch?v=h4GZMt8rWbU")
 
+pulp_fiction = media.Movie("Pulp Fiction",
+                    "A classic. 'Nuff said.",
+                    "https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg",
+                    "https://www.youtube.com/watch?v=dZWPL9deY7I")
+touching_the_void = media.Movie("Touching the Void",
+                    "An impossible tale of survival, which just so happens to be all true.",
+                    "https://upload.wikimedia.org/wikipedia/en/5/5f/Touching_the_Void.jpg",
+                    "https://www.youtube.com/watch?v=dZWPL9deY7I")
 these_movies.append(goodwill_hunting)
 these_movies.append(five_hundred_days_of_summer)
 these_movies.append(garden_state)
 these_movies.append(up_film)
 these_movies.append(donnie_darko)
 these_movies.append(american_history_x)
-
+these_movies.append(pulp_fiction)
+these_movies.append(touching_the_void)
 print(donnie_darko.__doc__)
 print(donnie_darko.__module__)
 print(donnie_darko.play_trailer.__name__)
