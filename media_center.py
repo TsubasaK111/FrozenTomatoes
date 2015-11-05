@@ -16,6 +16,7 @@ up_film = media.Movie("Up",
                     "How do you make a grown man cry within 5 minutes? Up.<br>Arguably the best Pixar film to date.",
                     "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg",
                     "https://www.youtube.com/watch?v=pkqzFUhGPJg")
+
 goodwill_hunting = media.Movie("Goodwill Hunting",
                     "Robert Williams and Matt Damon Shenanigans!!!",
                     "https://upload.wikimedia.org/wikipedia/en/b/b8/Good_Will_Hunting_theatrical_poster.jpg",
@@ -35,10 +36,12 @@ pulp_fiction = media.Movie("Pulp Fiction",
                     "A classic. 'Nuff said.",
                     "https://upload.wikimedia.org/wikipedia/en/8/82/Pulp_Fiction_cover.jpg",
                     "https://www.youtube.com/watch?v=dZWPL9deY7I")
+
 touching_the_void = media.Movie("Touching the Void",
                     "An impossible tale of survival, which just so happens to be all true.",
                     "https://upload.wikimedia.org/wikipedia/en/5/5f/Touching_the_Void.jpg",
                     "https://www.youtube.com/watch?v=dZWPL9deY7I")
+
 these_movies.append(goodwill_hunting)
 these_movies.append(five_hundred_days_of_summer)
 these_movies.append(garden_state)
@@ -47,7 +50,5 @@ these_movies.append(donnie_darko)
 these_movies.append(american_history_x)
 these_movies.append(pulp_fiction)
 these_movies.append(touching_the_void)
-print(donnie_darko.__doc__)
-print(donnie_darko.__module__)
-print(donnie_darko.play_trailer.__name__)
+
 frozen_tomatoes.open_movies_page(these_movies)
