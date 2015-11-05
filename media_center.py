@@ -38,5 +38,7 @@ these_movies.append(up_film)
 these_movies.append(donnie_darko)
 these_movies.append(american_history_x)
 
-'print(donnie_darko.__doc__)
+print(donnie_darko.__doc__)
+print(donnie_darko.__module__)
+print(donnie_darko.play_trailer.__name__)
 frozen_tomatoes.open_movies_page(these_movies)

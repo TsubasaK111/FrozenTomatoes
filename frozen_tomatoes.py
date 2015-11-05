@@ -19,6 +19,8 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #222222;
+            color: #bbbbbb;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -36,12 +38,19 @@ main_page_head = '''
             height: 100%;
         }
         .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            border-radius:5px;
         }
         .movie-tile:hover {
-            background-color: #AAA;
+            background-color: #111;
             cursor: pointer;
+        }
+        .movie-title {
+            height: 65px;
+        }
+        .movie-storyline {
+            padding-top: 15px;
         }
         .scale-media {
             padding-bottom: 56.25%;
@@ -122,11 +131,12 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <h2>{movie_title}</h2>
+<div class="col-md-3 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <h2 class="movie-title">{movie_title}</h2>
     <img src="{poster_image_url}" width="220" height="342">
-    <div>{movie_storyline}</div>
+    <p class="movie-storyline">{movie_storyline}</p>
 </div>
+
 '''
 
 
